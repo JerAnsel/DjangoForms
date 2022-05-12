@@ -1,12 +1,11 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
-from . import models
 from .forms import FlavorForm
 
 
 def formRender(request):
-    context = {}
+    context = {} 
 
     if request.method == 'POST':
         # create a form instance and populate it with data from the request:
